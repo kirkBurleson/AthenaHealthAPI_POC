@@ -1,0 +1,47 @@
+﻿@model ViewModels.UpdatePatientVM
+ 
+@{
+    ViewBag.Title = "Update A Patient";
+}
+
+<center><h2>Update A Patient</h2></center>
+
+@using (Html.BeginForm("UpdatePatient", "Patient", FormMethod.Post))
+{
+	<div class="required-all">
+		<div>
+			<label for="Patient ID">Patient ID:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Id)
+		</div>
+	</div>
+	<div class="required-one">
+		<div>
+			<label for="First Name">First Name:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Patient["firstname"])
+		</div>
+
+		<div>
+			<label for="Last Name">Last Name:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Patient["lastname"])
+		</div>
+
+		<div>
+			<label for="Date Of Birth">Date Of Birth:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Patient["dob"])
+		</div>
+
+		<center><button id="submit" name="submit">Submit</button></center>
+	</div>
+
+	<div id="result">
+		<span class="red big">@Model.UpdateResult</span>
+	</div>
+}
+
+@section css {
+	<link rel="stylesheet" type="text/css" href="~/Content/css/home.css" />
+}

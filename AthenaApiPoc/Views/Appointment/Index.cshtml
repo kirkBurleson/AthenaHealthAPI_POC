@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Appointment Operations Page</h2>
+
+<div>
+	<ul>
+		<li>@Html.ActionLink("Book An Appointment", "CreateAppointment", "Appointment")</li>
+		<li>@Html.ActionLink("Search For Appointment", "SearchForAppointment", "Appointment")</li>
+		<li>@Html.ActionLink("Update An Appointment", "UpdateAppointment", "Appointment")</li>
+		<li>@Html.ActionLink("Bulk Book Appointments", "BookAppointmentsFromFile", "Appointment")</li>
+	</ul>
+</div>

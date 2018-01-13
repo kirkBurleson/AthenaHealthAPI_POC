@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaApiPoc", "AthenaApiPoc\AthenaApiPoc.csproj", "{05DEA6EE-E4A4-4E5C-BA74-95AF793403AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{3FB2AF32-B623-4A33-A7A9-6CD33AA68D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapping", "Mapping\Mapping.csproj", "{775D9EB3-D76F-4B71-947B-B7F6FB0EBE37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{DB5A3DDF-4E49-4155-BAAE-2A793D6F07F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTModels", "RESTModels\RESTModels.csproj", "{DB5CB2FB-702B-499F-9A0D-E5C5A169F4FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{C0046A10-19A1-4CD7-B377-4D693CC65999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{015D0233-CFDE-4780-A866-01D3EC8F0D91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferModels", "TransferModels\TransferModels.csproj", "{04C2D4A1-7FF9-45BF-81D2-A76CC86D65ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModels", "DomainModels\DomainModels.csproj", "{8DE164A0-E573-4643-9B76-1A33218F7BA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05DEA6EE-E4A4-4E5C-BA74-95AF793403AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DEA6EE-E4A4-4E5C-BA74-95AF793403AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DEA6EE-E4A4-4E5C-BA74-95AF793403AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DEA6EE-E4A4-4E5C-BA74-95AF793403AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB2AF32-B623-4A33-A7A9-6CD33AA68D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB2AF32-B623-4A33-A7A9-6CD33AA68D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB2AF32-B623-4A33-A7A9-6CD33AA68D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB2AF32-B623-4A33-A7A9-6CD33AA68D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775D9EB3-D76F-4B71-947B-B7F6FB0EBE37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775D9EB3-D76F-4B71-947B-B7F6FB0EBE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775D9EB3-D76F-4B71-947B-B7F6FB0EBE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775D9EB3-D76F-4B71-947B-B7F6FB0EBE37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5A3DDF-4E49-4155-BAAE-2A793D6F07F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5A3DDF-4E49-4155-BAAE-2A793D6F07F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5A3DDF-4E49-4155-BAAE-2A793D6F07F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5A3DDF-4E49-4155-BAAE-2A793D6F07F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5CB2FB-702B-499F-9A0D-E5C5A169F4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5CB2FB-702B-499F-9A0D-E5C5A169F4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5CB2FB-702B-499F-9A0D-E5C5A169F4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5CB2FB-702B-499F-9A0D-E5C5A169F4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0046A10-19A1-4CD7-B377-4D693CC65999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0046A10-19A1-4CD7-B377-4D693CC65999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0046A10-19A1-4CD7-B377-4D693CC65999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0046A10-19A1-4CD7-B377-4D693CC65999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015D0233-CFDE-4780-A866-01D3EC8F0D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015D0233-CFDE-4780-A866-01D3EC8F0D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015D0233-CFDE-4780-A866-01D3EC8F0D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015D0233-CFDE-4780-A866-01D3EC8F0D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C2D4A1-7FF9-45BF-81D2-A76CC86D65ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C2D4A1-7FF9-45BF-81D2-A76CC86D65ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C2D4A1-7FF9-45BF-81D2-A76CC86D65ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C2D4A1-7FF9-45BF-81D2-A76CC86D65ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE164A0-E573-4643-9B76-1A33218F7BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE164A0-E573-4643-9B76-1A33218F7BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE164A0-E573-4643-9B76-1A33218F7BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE164A0-E573-4643-9B76-1A33218F7BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tenethealth.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AthenaApiPoc\\AthenaApiPoc.csproj
+		SccProjectName1 = AthenaApiPoc
+		SccLocalPath1 = AthenaApiPoc
+		SccProjectUniqueName2 = Services\\Services.csproj
+		SccProjectName2 = Services
+		SccLocalPath2 = Services
+		SccProjectUniqueName3 = Mapping\\Mapping.csproj
+		SccProjectName3 = Mapping
+		SccLocalPath3 = Mapping
+		SccProjectUniqueName4 = ViewModels\\ViewModels.csproj
+		SccProjectName4 = ViewModels
+		SccLocalPath4 = ViewModels
+		SccProjectUniqueName5 = RESTModels\\RESTModels.csproj
+		SccProjectName5 = RESTModels
+		SccLocalPath5 = RESTModels
+		SccProjectUniqueName6 = ExtensionMethods\\ExtensionMethods.csproj
+		SccProjectName6 = ExtensionMethods
+		SccLocalPath6 = ExtensionMethods
+		SccProjectUniqueName7 = Interfaces\\Interfaces.csproj
+		SccProjectName7 = Interfaces
+		SccLocalPath7 = Interfaces
+		SccProjectUniqueName8 = TransferModels\\TransferModels.csproj
+		SccProjectName8 = TransferModels
+		SccLocalPath8 = TransferModels
+		SccProjectUniqueName9 = DomainModels\\DomainModels.csproj
+		SccProjectName9 = DomainModels
+		SccLocalPath9 = DomainModels
+	EndGlobalSection
+EndGlobal

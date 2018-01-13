@@ -1,0 +1,38 @@
+﻿@model ViewModels.CreateAppointmentVM
+@{
+    ViewBag.Title = "CreateAppointment";
+}
+
+<center><h2>Create An Appointment</h2></center>
+
+@using (Html.BeginForm("CreateAppointment", "Appointment", FormMethod.Post))
+{
+    <div class="required-all">
+        <div class="leftside">
+            <div>
+                <label for="Patient ID">Patient ID:</label>
+                <br />
+                @Html.TextBoxFor(vm => vm.PatientID)
+            </div>
+
+            <div>
+                <label for="Department ID">Department ID:</label>
+                <br />
+                @Html.TextBoxFor(vm => vm.DepartmentID)
+            </div>
+        </div>
+        <div>
+            <label for="Provider ID">Provider ID:</label>
+            <br />
+            @Html.DropDownListFor(vm => vm.ProviderID, Model.ProviderListItems)
+        </div>
+
+        <center><span class="red tiny">All required</span></center>
+        <center><button id="submit" name="submit">Submit</button></center>
+    </div>
+}
+
+@section css {
+    <link rel="stylesheet" type="text/css" href="~/Content/css/home.css" />
+}
+

@@ -1,0 +1,75 @@
+﻿@model ViewModels.CreatePatientVM
+
+@{
+    ViewBag.Title = "Create A Patient";
+}
+
+<center><h2>Create A Patient</h2></center>
+
+@using (Html.BeginForm("CreatePatient", "Patient", FormMethod.Post))
+{
+	<div class="required-all">
+		<div>
+			<label for="First Name">First Name:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.First)
+		</div>
+			
+		<div>
+			<label for="Last Name">Last Name:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Last)
+		</div>
+			
+		<div>
+			<label for="Date Of Birth">Date Of Birth:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Dob)
+		</div>
+
+		<div>
+			<label for="Department ID">Department ID:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.DepartmentID)
+		</div>
+
+		<center><span class="red tiny">All required</span></center>
+	</div>
+	
+	<div class="required-one">
+		<div>
+			<label for="Email">Email:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Email)
+		</div>
+
+		<div>
+			<label for="Guarantor Email">Guarantor Email:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.GuarantorEmail)
+		</div>
+
+		<div>
+			<label for="Phone">Phone:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.HomePhone)
+		</div>
+
+		<div>
+			<label for="SSN">SSN:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.SSN)
+		</div>
+
+		<center><span class="red tiny">One required</span></center>
+		<center><button id="submit" name="submit">Submit</button></center>
+	</div>
+
+	<div id="result">
+		<span class="red big">@(Model.Error == "" ? Model.Id : Model.Error)</span>
+	</div>
+}
+
+@section css {
+	<link rel="stylesheet" type="text/css" href="~/Content/css/home.css" />
+}

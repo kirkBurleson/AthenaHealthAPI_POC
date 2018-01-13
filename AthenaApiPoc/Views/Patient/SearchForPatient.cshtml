@@ -1,0 +1,65 @@
+﻿@model ViewModels.SearchForPatientVM
+
+@{
+    ViewBag.Title = "Search For Patient";
+}
+
+<center><h2>Search For A Patient</h2></center>
+
+@using (Html.BeginForm("SearchForPatient", "Patient", FormMethod.Post))
+{
+	<div class="required-all">
+		<div>
+			<label for="First Name">First Name:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.First)
+		</div>
+
+		<div>
+			<label for="Last Name">Last Name:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Last)
+		</div>
+
+		<div>
+			<label for="Date Of Birth">Date Of Birth:</label>
+			<br />
+			@Html.TextBoxFor(vm => vm.Dob)
+		</div>
+
+		<center><button id="submit" name="submit">Submit</button></center>
+
+	</div>
+
+	<div id="result">
+		<table>
+			<caption>Search Results</caption>
+			<thead>
+				<tr>
+					<th>Patient ID</th>
+					<th>First</th>
+					<th>Last</th>
+					<th>DOB</th>
+				</tr>
+			</thead>
+			@if (Model.SearchResults.Count > 0)
+			{
+				for (var i = 0; i < Model.SearchResults.Count; i++)
+				{
+					<tbody>
+						<tr>
+							<td>@Model.SearchResults[i]["patientid"]</td>
+							<td>@Model.SearchResults[i]["firstname"]</td>
+							<td>@Model.SearchResults[i]["lastname"]</td>
+							<td>@Model.SearchResults[i]["dob"]</td>
+						</tr>
+					</tbody>
+				}
+			}
+		</table>
+	</div>
+}
+
+@section css {
+	<link rel="stylesheet" type="text/css" href="~/Content/css/home.css" />
+}
